@@ -27,9 +27,7 @@ test 'base state', (t) ->
 test 'basic commit', (t) ->
   committer.commit {a: 1}, {user: 'sam'}, (err) ->
     t.notOk err
-    db.readStream().pipe concat (body) ->
-      console.log 'body', body
-      t.end()
+    t.end()
 
 test 'reads commit', (t) ->
   committer.current (err, prev) ->
