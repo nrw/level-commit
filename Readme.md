@@ -118,10 +118,10 @@ data = {
 committer.commit(data, {user: 'sam', ship: 'battlestar'}, function (err) {
   if (err) return
 
-  // db.sublevel('battlestar').sublevel('pegasis.admin') now contains:
+  // db.sublevel('battlestar').sublevel('pegasus.admin') now contains:
   // [{key: 'user\xfflee', value: {name: 'Lee Adama'}}]
 
-  // db.sublevel('battlestar').sublevel('pegasis.public') now contains:
+  // db.sublevel('battlestar').sublevel('pegasus.public') now contains:
   // [{key: 'gear\xffviper1', value: {serial: 15513}}]
 })
 ```
