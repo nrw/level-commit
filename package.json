@@ -1,0 +1,44 @@
+{
+  "name": "level-commit",
+  "description": "track the change history of a leveldb instance",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nrw/level-commit.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "build": "coffee -c -o . .",
+    "watch": "coffee -w -c -o . .",
+    "test-watch": "supervisor -x tape -e coffee -n exit -q test/*.js"
+  },
+  "dependencies": {
+    "concat-stream": "^1.4.5",
+    "gen-id": "^0.1.1",
+    "level-objectify": "^0.2.0",
+    "lodash.clonedeep": "^2.4.1",
+    "patcher": "0.0.6",
+    "through2": "^0.4.1",
+    "through2-reduce": "^0.2.3"
+  },
+  "devDependencies": {
+    "coffee-script": "1.7.x",
+    "level-sublevel": "^5.2.0",
+    "level-test": "^1.6.3",
+    "tape": "2.x.x"
+  },
+  "homepage": "https://github.com/nrw/level-commit",
+  "keywords": [
+    "leveldb",
+    "changeset",
+    "history",
+    "append",
+    "track",
+    "changes"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Westlake"
+  }
+}
