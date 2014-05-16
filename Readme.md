@@ -52,7 +52,10 @@ db.readStream({start: 'a', end: 'a'}).pipe(concat(function(body){
 - `opts.separator = '\xff'` the string to use to separate sections of the prefix.
 - `opts.timestamp = 'ts'` the key to store the timestamp on.
 - `opts.prefix = 'commit' + opts.separator` the string to prefix the commit document's key with.
-  To store commits in a sublevel, prefix with `'\xffpath\xff\xffto\xff\xffsublevel\xffcommit'`
+    ``` js
+    // To store commits in a sublevel, prefix with:
+    opts.prefix = '\xffpath\xff\xffto\xff\xffsublevel\xffcommit\xff'
+    ```
 
 
 ### committer.current( fn(err, obj) )
