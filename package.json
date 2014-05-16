@@ -14,18 +14,18 @@
     "test-watch": "supervisor -x tape -e coffee -n exit -q test/*.js"
   },
   "dependencies": {
-    "concat-stream": "^1.4.5",
-    "gen-id": "^0.1.1",
-    "level-objectify": "^0.2.0",
-    "lodash.clonedeep": "^2.4.1",
+    "concat-stream": "1.x.x",
+    "gen-id": "0.x.x",
+    "level-objectify": "0.x.x",
+    "lodash.clonedeep": "2.x.x",
     "patcher": "0.0.6",
-    "through2": "^0.4.1",
-    "through2-reduce": "^0.2.3"
+    "through2": "0.x.x",
+    "through2-reduce": "0.x.x"
   },
   "devDependencies": {
     "coffee-script": "1.7.x",
-    "level-sublevel": "^5.2.0",
-    "level-test": "^1.6.3",
+    "level-sublevel": "5.x.x",
+    "level-test": "1.x.x",
     "tape": "2.x.x"
   },
   "homepage": "https://github.com/nrw/level-commit",
